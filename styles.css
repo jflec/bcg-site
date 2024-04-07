@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(240, 240, 240);
 }
 
 .main {
@@ -11,7 +11,7 @@ body {
   justify-content: center;
   gap: 2vh;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: rgb(10, 10, 10);
 }
 
 .group {
@@ -23,5 +23,5 @@ body {
 }
 
 a {
-  color: white;
+  color: rgb(10, 10, 10);
 }
