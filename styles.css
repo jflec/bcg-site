@@ -1,27 +1,86 @@
+html,
+body,
+div,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
-  background-color: rgb(240, 240, 240);
+  line-height: 1;
+  background-color: #6f553a;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 8px 12px;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .main {
   width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2vh;
-  font-family: "Poppins", sans-serif;
-  color: rgb(10, 10, 10);
+  gap: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 .group {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  flex-direction: row;
-  gap: 2vw;
+  flex-direction: column;
+  gap: 12px;
 }
 
-a {
-  color: rgb(10, 10, 10);
+.row-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.sponsor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.left {
+  align-items: flex-end;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
 }
