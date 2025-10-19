@@ -1,0 +1,6 @@
+# robots.txt for www.bigchadguys.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.bigchadguys.com/sitemap.xml

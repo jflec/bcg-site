@@ -3,7 +3,8 @@ body,
 div,
 h1,
 h2,
-a {
+a,
+p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +15,7 @@ a {
 
 body {
   line-height: 1;
-  background-color: #6f553a;
+  background-color: #9B1613;
 }
 
 h2 {
@@ -76,6 +77,11 @@ a:hover {
 
 .left {
   align-items: flex-end;
+}
+
+footer p {
+  opacity: 0.5;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
