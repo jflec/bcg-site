@@ -15,7 +15,7 @@ p {
 
 body {
   line-height: 1;
-  background-color: #9B1613;
+  background-color: #1c582b;
 }
 
 h2 {
@@ -27,7 +27,6 @@ a {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 8px 12px;
-  transition: 0.2s;
 }
 
 a:hover {
@@ -58,7 +57,7 @@ a:hover {
 
 .row-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 
@@ -84,9 +83,8 @@ footer p {
   text-align: center;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none;
-    transition: none;
+@media (max-width: 1000px) {
+  .row-container {
+    grid-template-columns: 1fr;
   }
 }
